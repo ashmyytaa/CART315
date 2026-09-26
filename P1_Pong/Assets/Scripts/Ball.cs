@@ -16,7 +16,7 @@ public class Ball : MonoBehaviour
     public void ResetBall()
     {
         _rigidBody.linearVelocity = Vector2.zero;
-        _rigidBody.angularVelocity = 0;
+    _rigidBody.angularVelocity = 0;
         transform.position = Vector3.zero;
     }
 
@@ -28,5 +28,7 @@ public class Ball : MonoBehaviour
         Vector2 direction = new Vector2(x, y);
 
         _rigidBody.AddForce(direction * speed);
+            _rigidBody.angularVelocity = 360.0f;
+
     }
 }
