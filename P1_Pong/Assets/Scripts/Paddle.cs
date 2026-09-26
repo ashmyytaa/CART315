@@ -17,10 +17,15 @@ public class Paddle : MonoBehaviour
     }
 
     // FixedUpdate is called once per physics update
-    private void FixedUpdate()
+  private void FixedUpdate()
+{
+    if (direction.sqrMagnitude != 0)
     {
-        if (direction.sqrMagnitude == 0) return;
-
         _rigidBody.AddForce(direction * speed);
     }
+
+    float angle = Mathf.Sin(Time.time * 5.0f) * 30.0f;
+
+    _rigidBody.MoveRotation(angle);
+}
 }
