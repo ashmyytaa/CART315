@@ -11,6 +11,7 @@ public class Paddle : MonoBehaviour
 
     public Vector2 direction;
 
+
     private void Awake()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
@@ -22,6 +23,7 @@ public class Paddle : MonoBehaviour
     if (direction.sqrMagnitude != 0)
     {
         _rigidBody.AddForce(direction * speed);
+
     }
 
     float angle = Mathf.Sin(Time.time * 5.0f) * 30.0f;

@@ -7,11 +7,18 @@ public class Ball : MonoBehaviour
     private Rigidbody2D _rigidBody;
 
     public float speed = 100.0f;
+        public GameObject onCollectEffect;
+
 
     private void Awake()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
     }
+
+    private void Start()
+{
+    AddStartingForce();
+}
 
     public void ResetBall()
     {
@@ -31,4 +38,30 @@ public class Ball : MonoBehaviour
             _rigidBody.angularVelocity = 360.0f;
 
     }
+
+
+private void OnCollisionEnter2D(Collision2D collision)
+{
+    Paddle paddle = collision.gameObject.GetComponent<Paddle>();
+
+    if (paddle != null)
+    {
+        ContactPoint2D contact = collision.GetContact(0);
+
+        GameObject effect = Instantiate(
+            onCollectEffect,
+            contact.point,
+            Quaternion.identity
+        );
+
+        ParticleSystem particles = effect.GetComponent<ParticleSystem>();
+
+        if (particles != null)
+        {
+            particles.Play();
+        }
+    }
+}
+
+
 }

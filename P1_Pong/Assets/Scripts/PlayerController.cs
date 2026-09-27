@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
     public Paddle paddle;
 
+
     // Update is called once per frame
     private void Update()
     {
@@ -19,4 +20,5 @@ public class PlayerController : MonoBehaviour
 
         paddle.direction = _direction;
     }
+
 }

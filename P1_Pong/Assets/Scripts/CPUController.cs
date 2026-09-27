@@ -5,6 +5,7 @@ public class CPUController : MonoBehaviour
     public Ball ball;
     public Paddle paddle;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,5 +18,6 @@ public class CPUController : MonoBehaviour
         Vector2 paddlePos = paddle.transform.position;
 
         paddle.direction = new Vector2(0.0f, (ballPos - paddlePos).y);
+
     }
 }
