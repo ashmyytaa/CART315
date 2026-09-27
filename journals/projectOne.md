@@ -7,3 +7,13 @@ Tried at home on my laptop to install the correct Unity versions. The teacher up
 
 ## 22-09-2026
 Finally I was able to open my Pong Files!!! It works really well and when I press play, I can see the simulation of the Pong game. Im going to now figure out how to open the code scripts on my VS Code, and then I will start brainstorming for what modifications I will do on my Pong variation. I feel a bit behind, but its okay I will try to catchup. I can finnally also write on this journal properly, as I would keep my journal entries on my notes app, but can now write here now that everything works.
+
+## 24-09-2026
+Did some brainstorming of ideas I can incorporate for my Pong modification. I realized after class that I am cooked because I did not technically start my Pong alterations and im late si im kinda stressing. I also saw examples of Pong modifications from peers who presented their work in progress to the class and so I got some inspiration on that. I will now start to work on my pong and hopefully finish by the weekend. 
+
+## 25-09-2026
+I added my first changes to my Pong wich is mainly UI modifications. But i feel pretty good now. Now will add my gameplay modification I have 2 ideas in mind so I will try to implement those. I was able to download some assets in the unity store so I put that in my game. 
+
+## 26-09-2026
+FDid my gameplay modifications! Modified my paddle to swing left and right, as well as I added a particle effect when the ball hits the paddle. pretty cool. I also added multiple balls and they all have changes in their speeds and their mass. I realized i forgot to commit my changes since a week ago so rip I need to make more commit messages. 
+
