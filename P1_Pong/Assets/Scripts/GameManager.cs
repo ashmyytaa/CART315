@@ -28,15 +28,12 @@ public class GameManager : MonoBehaviour
 {
     if (courtId == 0)
     {
-        // Ball entered left court → Player 2 scores
         score.IncreaseScore(1);
     }
     else if (courtId == 1)
     {
-        // Ball entered right court → Player 1 scores
         score.IncreaseScore(0);
     }
-
     StartRound();
 }
 

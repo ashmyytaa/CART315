@@ -26,7 +26,7 @@ private void FixedUpdate()
     if (_rigidBody.linearVelocity.sqrMagnitude > 0.01f)
     {
         _rigidBody.linearVelocity =
-            _rigidBody.linearVelocity.normalized * speed;
+         _rigidBody.linearVelocity.normalized * speed;
     }
 }
 
@@ -45,7 +45,7 @@ private void FixedUpdate()
         Vector2 direction = new Vector2(x, y);
 
         _rigidBody.AddForce(direction * speed);
-            _rigidBody.angularVelocity = 360.0f;
+        _rigidBody.angularVelocity = 360.0f;
 
     }
 
@@ -72,6 +72,4 @@ private void OnCollisionEnter2D(Collision2D collision)
         }
     }
 }
-
-
 }

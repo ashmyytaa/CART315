@@ -24,12 +24,6 @@ public class Score : MonoBehaviour
         UpdateScore();
     }
 
-    // public void ResetScore()
-    // {
-    //     scorePlayerOne = 0;
-    //     scorePlayerTwo = 0;
-    // }
-
     public void ResetScore()
 {
     scorePlayerOne = 0;
@@ -41,10 +35,7 @@ public class Score : MonoBehaviour
 
     // // Update is called once per frame
     // void UpdateScore()
-    // {
-    //     scorePlayerOneText.text = scorePlayerOne.ToString();
-    //     scorePlayerTwoText.text = scorePlayerTwo.ToString();
-    // }
+
 
     private void UpdateScore()
 {

@@ -19,7 +19,6 @@
 //     }
 // }
 
-
 using UnityEngine;
 
 public class Court : MonoBehaviour
