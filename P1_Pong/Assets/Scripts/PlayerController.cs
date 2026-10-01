@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
             _direction = Vector2.down;
 
         paddle.direction = _direction;
+
+
+        float angle = Mathf.Sin(Time.time * 5.0f) * 30.0f;
+        paddle.Rotate(angle);
     }
 
 }

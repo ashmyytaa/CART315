@@ -50,6 +50,7 @@ private void FixedUpdate()
     }
 
 
+//PARTICLE SYSTEM FROM UNITY ESSENTIALS
 private void OnCollisionEnter2D(Collision2D collision)
 {
     Paddle paddle = collision.gameObject.GetComponent<Paddle>();
