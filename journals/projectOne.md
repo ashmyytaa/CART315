@@ -17,3 +17,11 @@ I added my first changes to my Pong wich is mainly UI modifications. But i feel 
 ## 26-09-2026
 FDid my gameplay modifications! Modified my paddle to swing left and right, as well as I added a particle effect when the ball hits the paddle. pretty cool. I also added multiple balls and they all have changes in their speeds and their mass. I realized i forgot to commit my changes since a week ago so rip I need to make more commit messages. 
 
+## 30-09-2026
+My final PONG game is coming to fruit. A decided to go with a pool theme, calling my game Pool Pong. I thought that it would be cool to have the field look like a pool and the paddles can be people throwing around a ball in the pool. SO lots of aethetical changes were made to make the UI represent a pool theme. As for the gameplay changes I did two. The first one is that I maddle the player paddle smaller, to make it more challenging for the player to win. Since its paddle is smaller, it is harder to catch the ball. Secondly, I added a particle effect everytime the paddle hits the ball. The particle effect is there to mimic a water splash, when the ball and paddle hit eachhother. The particle effect I took it from the Unity Essentials tutorial, where one of my task had the particle effect, so I decided to incorporate it to my gameplay. And for my assets for the UI, the sources and refferences will be below: 
+
+Pool background: ADOBE STOCK IMAGE- https://stock.adobe.com/ca/images/water-ripple-surface-with-sunlight-reflections-in-cartoon-style-game-texture-top-view-beach-ocean-clean-and-deep-water/722096371?prev_url=detail 
+
+Star Ball + Paddle asset: UNITY ASSET STORE- https://assetstore.unity.com/packages/2d/gui/icons/cute-gui-pack-lite-202389?srsltid=AU7gw4U3dZUs-FROBHqxa5JLtmz-kcvddbdKP-kNwv4ziz8s79wQpfqc 
+
+Particle effect: UNITY LEARN- https://learn.unity.com/pathway/unity-essentials/unit/programming-essentials/tutorial/collect-the-collectible 
