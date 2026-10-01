@@ -26,8 +26,11 @@ public class Paddle : MonoBehaviour
 
     }
 
-    float angle = Mathf.Sin(Time.time * 5.0f) * 30.0f;
+  //  float angle = Mathf.Sin(Time.time * 5.0f) * 30.0f;
 
-    _rigidBody.MoveRotation(angle);
+   // _rigidBody.MoveRotation(angle);
 }
 }
+
+
+

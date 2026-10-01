@@ -6,7 +6,8 @@ public class Ball : MonoBehaviour
 {
     private Rigidbody2D _rigidBody;
 
-    public float speed = 100.0f;
+public float speed = 10.0f;
+
         public GameObject onCollectEffect;
 
 
@@ -18,6 +19,15 @@ public class Ball : MonoBehaviour
     private void Start()
 {
     AddStartingForce();
+}
+
+private void FixedUpdate()
+{
+    if (_rigidBody.linearVelocity.sqrMagnitude > 0.01f)
+    {
+        _rigidBody.linearVelocity =
+            _rigidBody.linearVelocity.normalized * speed;
+    }
 }
 
     public void ResetBall()
