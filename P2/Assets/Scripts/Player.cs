@@ -29,6 +29,16 @@ public class Player : MonoBehaviour
 
         transform.position += direction * Time.deltaTime;
 
+          if (transform.position.y > 3f)
+        {
+            direction.y = -Mathf.Abs(direction.y);
+        }
+
+        if (transform.position.y < -3f)
+        {
+            direction.y = Mathf.Abs(direction.y);
+        }
+
         Vector3 rotation = transform.eulerAngles;
         rotation.z = direction.y * tilt;
         transform.eulerAngles = rotation;
