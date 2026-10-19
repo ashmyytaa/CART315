@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
         Vector3 position = transform.position;
         position.y = 0f;
         transform.position = position;
-
         direction = Vector3.zero;
     }
 
@@ -46,6 +45,10 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.GetComponent<Particle>() != null)
+{
+    other.GetComponent<Particle>().TurnWhite();
+}
         if (other.gameObject.CompareTag("Obstacle"))
         {
             GameManager.Instance.GameOver();
