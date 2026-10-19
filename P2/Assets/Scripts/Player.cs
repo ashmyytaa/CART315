@@ -43,20 +43,15 @@ public class Player : MonoBehaviour
         transform.eulerAngles = rotation;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.GetComponent<Particle>() != null)
+ private void OnTriggerEnter2D(Collider2D other)
 {
-    other.GetComponent<Particle>().TurnWhite();
-}
-        if (other.gameObject.CompareTag("Obstacle"))
-        {
-            GameManager.Instance.GameOver();
-        }
+    Particle particle = other.GetComponent<Particle>();
 
-        else if (other.gameObject.CompareTag("Scoring"))
-        {
-            GameManager.Instance.IncreaseScore();
-        }
+    if (particle != null)
+    {
+        particle.TurnWhite();
+
+        GameManager.Instance.IncreaseScore();
     }
+}
 }

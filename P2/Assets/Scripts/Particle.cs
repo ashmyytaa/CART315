@@ -6,6 +6,7 @@ public class Particle : MonoBehaviour
     public float speed = 3f;
 
     private SpriteRenderer spriteRenderer;
+    private bool collected = false;
 
     private void Start()
     {
@@ -30,6 +31,12 @@ public class Particle : MonoBehaviour
 
     public void TurnWhite()
     {
+        if (collected)
+        {
+            return;
+        }
+
+        collected = true;
         spriteRenderer.color = Color.white;
     }
 }
