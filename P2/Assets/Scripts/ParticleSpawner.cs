@@ -3,7 +3,7 @@ using UnityEngine;
 public class ParticleSpawner : MonoBehaviour
 {
     public GameObject particlePrefab;
-    public float spawnRate = 0.5f;
+    public float spawnRate = 0.04f;
 
     private void Start()
     {

@@ -28,12 +28,12 @@ public class Player : MonoBehaviour
 
         transform.position += direction * Time.deltaTime;
 
-          if (transform.position.y > 3f)
+          if (transform.position.y > 4.5f)
         {
             direction.y = -Mathf.Abs(direction.y);
         }
 
-        if (transform.position.y < -3f)
+        if (transform.position.y < -4.5f)
         {
             direction.y = Mathf.Abs(direction.y);
         }
