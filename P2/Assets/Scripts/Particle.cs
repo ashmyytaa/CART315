@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Particle : MonoBehaviour
 {
-    public float speed = 3f;
+    public float speed = 3f; //how quickly particles move tp the left
 
-    private SpriteRenderer spriteRenderer;
-    private bool collected = false;
+    private SpriteRenderer spriteRenderer; //accesing the partickes visuals
+    private bool collected = false; //detects if particle has been collected
 
-    private void Start()
+    private void Start() //assinging random color for the particles
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -19,7 +19,7 @@ public class Particle : MonoBehaviour
         );
     }
 
-    private void Update()
+    private void Update() //moves the particle to the left
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
 
@@ -29,7 +29,7 @@ public class Particle : MonoBehaviour
         }
     }
 
-    public void TurnWhite()
+    public void TurnWhite() //tunrs particle collor to white when collected
     {
         if (collected)
         {

@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public int score { get; private set; } = 0;
 
-    private void Awake()
+    private void Awake() 
     {
         if (Instance != null) {
             DestroyImmediate(gameObject);
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     public void Play()
     {
         score = 0;
-        scoreText.text = score.ToString();
+        scoreText.text = score.ToString(); //score reset
 
         playButton.SetActive(false);
         gameOver.SetActive(false);
