@@ -1,0 +1,2 @@
+## 27-10-2026
+I browsed all the material provided for prototype 3. I have some ideas on what I want to pursue for this prototype, but it is still unsure because I want to find more inspiration at first.
