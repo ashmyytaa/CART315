@@ -1,0 +1,75 @@
+newmtl jewels_303_pink_Mat
+Pr 0.031
+Ni 1.346
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 1.0 0.733 0.856
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 0.506 0.711
+adobe_density 0.010
+Ns 16
+adobe_translucence 1.000
+newmtl jewels_303_red_Mat
+Pr 0.031
+Ni 1.346
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 1.0 0.733 0.733
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 1.0 0.506 0.506
+adobe_density 0.010
+Ns 16
+adobe_translucence 1.000
+newmtl jewels_303_purple_Mat
+Pr 0.031
+Ni 1.346
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.908 0.733 1.0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 0.810 0.506 1.0
+adobe_density 0.010
+Ns 16
+adobe_translucence 1.000
+newmtl jewels_303_blue_Mat
+Pr 0.031
+Ni 1.346
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.733 0.833 1.0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 0.506 0.670 1.0
+adobe_density 0.010
+Ns 16
+adobe_translucence 1.000
+newmtl jewels_303_green_Mat
+Pr 0.031
+Ni 1.346
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0.733 1.0 0.760
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_interior_color 0.506 1.0 0.547
+adobe_density 0.010
+Ns 16
+adobe_translucence 1.000
