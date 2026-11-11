@@ -3,9 +3,34 @@ guid: 6d18432b75f48c1408283cc223b88290
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewels_303_blue_Mat
+    second: {fileID: 2100000, guid: a19a9ff62acc0934495b830bd64b22b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewels_303_green_Mat
+    second: {fileID: 2100000, guid: 6624e0a6707677141bc4d482b9d841ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewels_303_pink_Mat
+    second: {fileID: 2100000, guid: 8159019f497f4234db54aa70b4c4edc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewels_303_purple_Mat
+    second: {fileID: 2100000, guid: e3dd62a7d396ebf42831dda38be1812c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewels_303_red_Mat
+    second: {fileID: 2100000, guid: 4720817ccb16acc4b80c0d4f1e7afb99, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
