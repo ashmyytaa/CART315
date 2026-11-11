@@ -1,41 +1,35 @@
+
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class CapsuleFootsteps : MonoBehaviour {
+public class CapsuleFootsteps : MonoBehaviour{
     private AudioSource audioSource;
-    private Rigidbody rb;
-    private CharacterController cc;
-
-    public float movementThreshold = 0.1f; 
+    private Vector3 lastPosition;
+    public float movementThreshold = 0.1f;
 
     void Start(){
         audioSource = GetComponent<AudioSource>();
-        rb = GetComponent<Rigidbody>();
-        cc = GetComponent<CharacterController>();
+        audioSource.loop = true;
+        lastPosition = transform.position;
     }
 
-    void Update()  {
-        bool isMoving = false;
+    void Update(){
+        Vector3 movement = transform.position - lastPosition;
+        movement.y = 0f;
 
-        if (cc != null) {
-        }
-        else if (rb != null) {
-        }
-        else {
-            float h = Input.GetAxis("Horizontal");
-            float v = Input.GetAxis("Vertical");
-            isMoving = (h != 0 || v != 0);
-        }
+        float speed = movement.magnitude / Mathf.Max(Time.deltaTime, 0.0001f);
+        bool isMoving = speed > movementThreshold;
 
-        if (isMoving) {
+        if (isMoving){
             if (!audioSource.isPlaying) {
                 audioSource.Play();
             }
         }
-        else {
-            if (audioSource.isPlaying) {
+        else{
+            if (audioSource.isPlaying){
                 audioSource.Stop();
             }
         }
+        lastPosition = transform.position;
     }
 }
