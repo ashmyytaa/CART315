@@ -1,27 +1,28 @@
+
 using UnityEngine;
 
-
-public class GemCollect : MonoBehaviour
-{
+public class GemCollect : MonoBehaviour{
     public GameObject gemBurstPrefab;
+    private void OnTriggerEnter(Collider other){
+        if (other.CompareTag("Player")){
+            if (gemBurstPrefab != null){
+                Camera cam = Camera.main;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            //creating a sparkling burst
-            if (gemBurstPrefab != null)
-            {
+                Vector3 burstPosition = transform.position;
+
+                if (cam != null){
+                    burstPosition = cam.transform.position
+                        + cam.transform.forward * 4f;
+                }
+
                 GameObject burst = Instantiate(
                     gemBurstPrefab,
-                    transform.position,
+                    burstPosition,
                     Quaternion.identity
                 );
 
-                Destroy(burst, 2f);
+                Destroy(burst, 3f);
             }
-
-            //removes the gem that the capsule touched on
             Destroy(gameObject);
         }
     }
