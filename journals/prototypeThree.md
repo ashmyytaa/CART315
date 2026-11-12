@@ -29,3 +29,7 @@ Attribution for ambiant music:
 
 ## 01-11-2026
 Finalized my hierarchy, organized my assets and objects, mentionned all my references and attribution in my journal, clean up code and game. Made final tweaks. 
+
+
+## 10-11-2026
+Working on the Prototype 3 - Version 2. I started by adding a sparkle burst each time that my chatacter (capsule) collides with a gem. I was able to achieve so by adding a particle effect, and making is with with RigidBody and SphereCollider. Having to code that part was not bad to be honest it was fairly simple, as most of the implementation was done on Unity itself. 
