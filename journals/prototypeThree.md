@@ -36,6 +36,9 @@ Working on the Prototype 3 - Version 2. I started by adding a sparkle burst each
 ## 12-11-2026
 I am really unsatisfied with the colors that are composed by my gems and my terrain. They dont go well togheter and they are no appealing to the eye. I tried to do various changes to the color, alpha, emission, specular and it just dosent look NICE. ill try to do some research on how to change color specs within unity's engine. 
 
+## 14-11-2026
+I tried to add a visual component to my skybox but it failed and it got too hard so I deleted it. I wanted to add like stars on the sky to just add a beauty enhancement to my game and I tried to do it with the particles effect. I really didnt want to code it so I tried to do it within Unity's engine. Like my particle effect did show up but I wasent taking up the entire space of my terrain and it wasent high enough as well to like make it seem that it is stars on the sky. After multiple tweaks and trials, I gave up on it and deleted it.
+
 ## 15-11-2026
 After multiple trials and changes, I have finally perfected my color palette for my walking sim. I was able to change in my desired colourway my gems and my terrain for them to be cohesive and well blended. It was all in the specular! I really just needed to work in it to be able to achieve my desired colors. I also added a gem counter to be able to count and display for everytime that my capsule collides with a gem. I didnt add a loosing or winning component I just want my counter to increase indifinetly acoording to how many gems the user is able to catch. Realisticly, the user cannot catch all the gems found on my terrain, as they are in locations that are unreachable to the capsule. Also, my goal was to make it like an aethetic low energy, visually pleasing, satisfying simulation game. I think letting counter increase with no end or win is a way to reflect upon the happy colors and vibes that are being emitted by my atmosphere. 
 
