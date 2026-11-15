@@ -32,3 +32,15 @@ Finalized my hierarchy, organized my assets and objects, mentionned all my refer
 
 ## 10-11-2026
 Working on the Prototype 3 - Version 2. I started by adding a sparkle burst each time that my chatacter (capsule) collides with a gem. I was able to achieve so by adding a particle effect, and making is with with RigidBody and SphereCollider. Having to code that part was not bad to be honest it was fairly simple, as most of the implementation was done on Unity itself. 
+
+## 12-11-2026
+I am really unsatisfied with the colors that are composed by my gems and my terrain. They dont go well togheter and they are no appealing to the eye. I tried to do various changes to the color, alpha, emission, specular and it just dosent look NICE. ill try to do some research on how to change color specs within unity's engine. 
+
+## 15-11-2026
+After multiple trials and changes, I have finally perfected my color palette for my walking sim. I was able to change in my desired colourway my gems and my terrain for them to be cohesive and well blended. It was all in the specular! I really just needed to work in it to be able to achieve my desired colors. I also added a gem counter to be able to count and display for everytime that my capsule collides with a gem. I didnt add a loosing or winning component I just want my counter to increase indifinetly acoording to how many gems the user is able to catch. Realisticly, the user cannot catch all the gems found on my terrain, as they are in locations that are unreachable to the capsule. Also, my goal was to make it like an aethetic low energy, visually pleasing, satisfying simulation game. I think letting counter increase with no end or win is a way to reflect upon the happy colors and vibes that are being emitted by my atmosphere. 
+
+Prototype 3- Version 2 (2 enhancements)
+-A gem burst appears everytime the capsule collides with a gem.
+-A counter is displayed on the screen and it increments each time the capsule catches a gem with its gem burst. 
+
+Overall, I am very satisfied by this game I think it reflects on my art practices and the types of environnements I like to portay and radiate. I dont really play games but I love animations and simulating experiences and like minor interactions so I think my projects so far in this course have reflected that. 
