@@ -21,6 +21,11 @@ public class GemCollect : MonoBehaviour{
                 );
                 Destroy(burst, 3f);
             }
+
+            if (GemCounter.Instance != null){
+              GemCounter.Instance.AddGem();
+            }
+            
             Destroy(gameObject);
         }
     }
