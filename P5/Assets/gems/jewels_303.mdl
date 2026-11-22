@@ -1,0 +1,88 @@
+mdl 1.3;
+
+using state import *;
+
+import adobe::mtl::*;
+import adobe::util::*;
+import ::tex::gamma_mode;
+import ::state::normal;
+
+export material jewels_303_pink_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(1.0000),
+    baseColor : color(1.0, 0.7337075339405293, 0.8568389701819905),
+    interiorColor : color(1.0, 0.5060000419616699, 0.7118332386016846),
+    indexOfRefraction : float(2.418),
+    metallic : float(0.0),
+    roughness : float(0.0316),
+    density : float(0.0800),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jewels_303_purple_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(1.0000),
+    baseColor : color(0.9089847416609601, 0.7337075339405293, 1.0),
+    interiorColor : color(0.8106334209442139, 0.5060000419616699, 1.0),
+    indexOfRefraction : float(2.418),
+    metallic : float(0.0),
+    roughness : float(0.0316),
+    density : float(0.0900),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jewels_303_red_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(1.0000),
+    baseColor : color(1.0, 0.7337075339405293, 0.7337075339405293),
+    interiorColor : color(1.0, 0.5060000419616699, 0.5060000419616699),
+    indexOfRefraction : float(2.418),
+    metallic : float(0.0),
+    roughness : float(0.0316),
+    density : float(0.0800),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jewels_303_blue_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(1.0000),
+    baseColor : color(0.7337075339405293, 0.8339488413473533, 1.0),
+    interiorColor : color(0.5060000419616699, 0.6706666350364685, 1.0),
+    indexOfRefraction : float(2.418),
+    metallic : float(0.0),
+    roughness : float(0.0316),
+    density : float(0.0800),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
+
+export material jewels_303_green_Mat(*)
+  = adobe::mtl::standard(
+    translucence : float(1.000),
+    baseColor : color(0.7337075339405293, 1.0, 0.7602623113085016),
+    interiorColor : color(0.5060000419616699, 1.0, 0.547166645526886),
+    indexOfRefraction : float(2.418),
+    metallic : float(0.0),
+    roughness : float(0.0316),
+    density : float(0.0800),
+    glow : float(0.0),
+    opacity : float(1.0),
+    normal : ::state::normal(),
+    height : float(0.5),
+    heightScale : float(1.0)
+    );
